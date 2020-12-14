@@ -77,7 +77,7 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
-                <type>pom</type>
+                <type>pom</type>a
                 <scope>import</scope>
             </dependency>
         </dependencies>

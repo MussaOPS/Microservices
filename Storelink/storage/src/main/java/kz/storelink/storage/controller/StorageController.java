@@ -18,6 +18,11 @@ public class StorageController {
     private final StorageService storageService;
     private final StorageRepository storageRepository;
 
+    public StorageController(StorageService storageService, StorageRepository storageRepository) {
+        this.storageService = storageService;
+        this.storageRepository = storageRepository;
+    }
+
     @GetMapping("/storage/{userId}")
     public ResponseEntity<Storage> getWishlist(@PathVariable Long userId) {
         return new ResponseEntity<>(storageService.getStorageByUserId(userId), HttpStatus.OK);
